@@ -21,7 +21,7 @@ $(document).ready(function() {
   if(windowLocation.indexOf("presentations") < 0) {
     if(sessionStorage.getItem('projects') == null) {
       $.ajax({
-        url: 'http://luisjg.io/json/projects.json',
+        url: 'https://luisjg.dev/v4/json/projects.json',
         dataType: 'json',
       }).done(function(data) {
         sessionStorage.setItem('projects', JSON.stringify(data));
